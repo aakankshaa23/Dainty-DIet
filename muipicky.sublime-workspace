@@ -1,0 +1,1758 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"I",
+				"ItemUpdateView"
+			],
+			[
+				"form",
+				"form_class"
+			],
+			[
+				"Ite",
+				"ItemForm"
+			],
+			[
+				"Create",
+				"CreateView"
+			],
+			[
+				"pas",
+				"password_reset"
+			],
+			[
+				"auth",
+				"auth_views"
+			],
+			[
+				"au",
+				"auth_views"
+			],
+			[
+				"P",
+				"PasswordResetConfirmView"
+			],
+			[
+				"Pass",
+				"PasswordResetCompleteView"
+			],
+			[
+				"com",
+				"PasswordResetCompleteView"
+			],
+			[
+				"do",
+				"PasswordResetDoneView"
+			],
+			[
+				"djan",
+				"django"
+			],
+			[
+				"fol",
+				"form_valid"
+			],
+			[
+				"RestaurantC",
+				"RestaurantCreateView"
+			],
+			[
+				"Restauran",
+				"RestaurantCreate"
+			],
+			[
+				"Ca",
+				"CATEGORY"
+			],
+			[
+				"vali",
+				"validators"
+			],
+			[
+				"Rest",
+				"RestaurantForm"
+			],
+			[
+				"get",
+				"get"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"res",
+				"restaurants"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"Res",
+				"RestaurantLocation"
+			],
+			[
+				"Resta",
+				"RestaurantLocation"
+			],
+			[
+				"mo",
+				"models"
+			],
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"C",
+				"Contact"
+			],
+			[
+				"A",
+				"AboutView"
+			],
+			[
+				"Hom",
+				"HomeView"
+			],
+			[
+				"T",
+				"TemplateView"
+			],
+			[
+				"Conta",
+				"ContactView"
+			],
+			[
+				"home",
+				"home2"
+			],
+			[
+				"Ba",
+				"BASE_DIR"
+			],
+			[
+				"html",
+				"html_"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/home.html",
+			"settings":
+			{
+				"buffer_size": 254,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/models.py",
+			"settings":
+			{
+				"buffer_size": 1369,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/menus/models.py",
+			"settings":
+			{
+				"buffer_size": 773,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "from django.shortcuts import render\n\nfrom django.views.generic import ListView,DetailView,CreateView,UpdateView\nfrom .models import Item\nfrom .forms import ItemForm\n# Create your views here.\n\n\nclass ItemListView(ListView):\n\tdef get_queryset(self):\n\t\treturn Item.objects.filter(user=self.request.user)\n\n\nclass ItemDetailView(DetailView):\n\tdef get_queryset(self):\n\t\treturn Item.objects.filter(user=self.request.user)\n\n\n\nclass ItemCreateView(CreateView):\n\tform_class=ItemForm\n\tdef get_queryset(self):\n\t\treturn Item.objects.filter(user=self.request.user)\n\n\nclass ItemUpdateView(UpdateView):\n\tform_class=ItemForm\n\tdef get_queryset(self):\n\t\treturn Item.objects.filter(user=self.request.user)\n\n\n",
+			"file": "src/menus/views.py",
+			"file_size": 63,
+			"file_write_time": 132221631288662425,
+			"settings":
+			{
+				"buffer_size": 688,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "from django.conf.urls import url\n\n",
+			"file": "src/menus/urls.py",
+			"file_size": 0,
+			"file_write_time": 132221766328226788,
+			"settings":
+			{
+				"buffer_size": 34,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/menus/admin.py",
+			"settings":
+			{
+				"buffer_size": 115,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/utils.py",
+			"settings":
+			{
+				"buffer_size": 1236,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/admin.py",
+			"settings":
+			{
+				"buffer_size": 143,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/muipicky/settings/base.py",
+			"settings":
+			{
+				"buffer_size": 3255,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/muipicky/settings/local.py",
+			"settings":
+			{
+				"buffer_size": 3120,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/muipicky/settings/production.py",
+			"settings":
+			{
+				"buffer_size": 3124,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 301,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/views.py",
+			"settings":
+			{
+				"buffer_size": 2314,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/menus/forms.py",
+			"settings":
+			{
+				"buffer_size": 189,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/muipicky/old_settings.py",
+			"settings":
+			{
+				"buffer_size": 3191,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/restaurants/form.html",
+			"settings":
+			{
+				"buffer_size": 285,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/restaurants/restaurant_detail.html",
+			"settings":
+			{
+				"buffer_size": 271,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/forms.py",
+			"settings":
+			{
+				"buffer_size": 752,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/validators.py",
+			"settings":
+			{
+				"buffer_size": 275,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/restaurants/restaurant_list.html",
+			"settings":
+			{
+				"buffer_size": 328,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/muipicky/urls.py",
+			"settings":
+			{
+				"buffer_size": 2077,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/registration/password_reset_subject.txt",
+			"settings":
+			{
+				"buffer_size": 23,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/registration/password_reset_email.html",
+			"settings":
+			{
+				"buffer_size": 369,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/registration/password_reset_done.html",
+			"settings":
+			{
+				"buffer_size": 368,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/registration/password_reset_confirm.html",
+			"settings":
+			{
+				"buffer_size": 418,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/registration/password_reset_complete.html",
+			"settings":
+			{
+				"buffer_size": 171,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/snippets/nav.html",
+			"settings":
+			{
+				"buffer_size": 222,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/snippets/css.html",
+			"settings":
+			{
+				"buffer_size": 490,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{% extends \"base.html\" %}\n\n{% block content %}\n\n{% if form.errors %}\n<p>Your username and password didn't match. Please try again.</p>\n{% endif %}\n\n{% if next %}\n    {% if user.is_authenticated %}\n    <p>Your account doesn't have access to this page. To proceed,\n    please login with an account that has access.</p>\n    {% else %}\n    <p>Please login to see this page.</p>\n    {% endif %}\n{% endif %}\n\n<form method=\"post\" action=\"{% url 'login' %}\">\n{% csrf_token %}\n<table>\n<tr>\n    <td>{{ form.username.label_tag }}</td>\n    <td>{{ form.username }}</td>\n</tr>\n<tr>\n    <td>{{ form.password.label_tag }}</td>\n    <td>{{ form.password }}</td>\n</tr>\n</table>\n\n<input type=\"submit\" value=\"login\">\n<input type=\"hidden\" name=\"next\" value=\"{{ next }}\">\n</form>\n\n{# Assumes you setup the password_reset view in your URLconf #}\n\n\n{% endblock %}",
+			"file": "src/restaurants/registration/login.html",
+			"file_size": 838,
+			"file_write_time": 132220030567334717,
+			"settings":
+			{
+				"buffer_size": 838,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/registration/login.html",
+			"settings":
+			{
+				"buffer_size": 901,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restaurants/templates/registration/login.html",
+			"settings":
+			{
+				"buffer_size": 901,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/Contact.html",
+			"settings":
+			{
+				"buffer_size": 195,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/About.html",
+			"settings":
+			{
+				"buffer_size": 182,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/my_c++.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/my_c++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/my_c++.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/my_c++.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "Run",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: dsu"
+			],
+			[
+				"Snippet: snippet",
+				"Snippet: Enumeration"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/aakanksha/Dev/venv/src",
+		"/home/aakanksha/Dev/venv/src/muipicky",
+		"/home/aakanksha/Dev/venv/src/muipicky/settings",
+		"/home/aakanksha/Dev/venv/src/muipicky/settings/__pycache__",
+		"/home/aakanksha/Dev/venv/src/restaurants",
+		"/home/aakanksha/Dev/venv/src/restaurants/templates",
+		"/home/aakanksha/Dev/venv/src/restaurants/templates/registration",
+		"/home/aakanksha/Dev/venv/src/restaurants/templates/restaurants"
+	],
+	"file_history":
+	[
+		"/home/aakanksha/Dev/venv/src/restaurants/templates/registration/password_reset_form.html",
+		"/home/aakanksha/Dev/venv/src/restaurants/templates/restaurants/utils.py",
+		"/home/aakanksha/Desktop/code/cf12.cpp",
+		"/home/aakanksha/Desktop/code/input.txt",
+		"/home/aakanksha/Desktop/code/cf13.cpp",
+		"/home/aakanksha/Dev/venv/src/restaurants/views.py",
+		"/home/aakanksha/Desktop/code/cf2.cpp",
+		"/home/aakanksha/Desktop/code/cf11.cpp",
+		"/home/aakanksha/Desktop/code/cf10.cpp",
+		"/home/aakanksha/Desktop/code/cf9.cpp",
+		"/home/aakanksha/Dev/venv/src/templates/snippets/sidebar.html",
+		"/home/aakanksha/Dev/venv/src/templates/snippets/js.html",
+		"/home/aakanksha/Dev/venv/src/templates/snippets/nav.html",
+		"/home/aakanksha/Dev/venv/muipicky.sublime-project",
+		"/home/aakanksha/Dev/venv/src/templates/Contact.html",
+		"/home/aakanksha/Dev/venv/src/templates/About.html",
+		"/home/aakanksha/Dev/venv/src/muipicky/settings/production.py",
+		"/home/aakanksha/Dev/venv/src/templates/home.html",
+		"/home/aakanksha/Dev/venv/src/templates/base.html",
+		"/home/aakanksha/Dev/venv/src/restaurants/tests.py",
+		"/home/aakanksha/Dev/venv/src/muipicky/urls.py",
+		"/home/aakanksha/Desktop/code/snippet.sublime-snippet",
+		"/home/aakanksha/Desktop/code/cf7.cpp",
+		"/home/aakanksha/Dev/venv/src/muipicky/settings/local.py",
+		"/home/aakanksha/Desktop/code/cf8.cpp",
+		"/home/aakanksha/Dev/venv/src/muipicky/html2.html",
+		"/home/aakanksha/Dev/venv/src/muipicky/settings/__init__.py",
+		"/home/aakanksha/Dev/venv/src/muipicky/templates/base.html",
+		"/home/aakanksha/Dev/venv/src/restaurants/templates/base.html",
+		"/home/aakanksha/Dev/venv/src/muipicky/settings/base.py",
+		"/home/aakanksha/Dev/venv/src/muipicky/old_settngs.py",
+		"/home/aakanksha/Dev/venv/src/manage.py",
+		"/home/aakanksha/Dev/venv/src/muypicky/settings/production.py",
+		"/home/aakanksha/Dev/venv/src/muypicky/settings/local.py",
+		"/home/aakanksha/Dev/venv/src/muypicky/__init__.py",
+		"/home/aakanksha/Dev/venv/src/muypicky/settings/base.py",
+		"/home/aakanksha/Dev/venv/src/muypicky/settings/__init__.py",
+		"/home/aakanksha/Dev/venv/src/muypicky/old_settings.py",
+		"/home/aakanksha/Desktop/code/play.py",
+		"/home/aakanksha/Desktop/code/practice.html",
+		"/home/aakanksha/Desktop/code/cf6.cpp",
+		"/home/aakanksha/Desktop/code/cf5.cpp",
+		"/home/aakanksha/Desktop/code/cf4.cpp",
+		"/home/aakanksha/Desktop/code/cf3.cpp",
+		"/home/aakanksha/Desktop/code/cf1",
+		"/home/aakanksha/Desktop/extra/cfn2.cpp",
+		"/home/aakanksha/Desktop/extra/cf11.cpp",
+		"/home/aakanksha/Desktop/input.txt",
+		"/home/aakanksha/Desktop/cfn2.cpp",
+		"/home/aakanksha/Desktop/a.cpp",
+		"/home/aakanksha/Desktop/cfn3.cpp",
+		"/home/aakanksha/Desktop/cfn1.cpp",
+		"/home/aakanksha/Desktop/cd3.cpp",
+		"/home/aakanksha/Desktop/java.java",
+		"/home/aakanksha/Desktop/cd2.cpp",
+		"/home/aakanksha/Desktop/cd1.cpp",
+		"/home/aakanksha/Desktop/cf3.cpp",
+		"/home/aakanksha/Desktop/cf2n.cpp",
+		"/home/aakanksha/Desktop/cf2.cpp",
+		"/home/aakanksha/Desktop/cf1.cpp",
+		"/home/aakanksha/Desktop/cf11.cpp"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/templates/home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/restaurants/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								668,
+								668
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/menus/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								773,
+								773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/menus/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								607,
+								607
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/menus/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/menus/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/restaurants/utils.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								675,
+								675
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/restaurants/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/muipicky/settings/base.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1104,
+								1104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/muipicky/settings/local.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								835,
+								835
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/muipicky/settings/production.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/restaurants/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2155,
+								2155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 413.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/menus/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/muipicky/old_settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3176,
+								3176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/restaurants/templates/restaurants/form.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								151,
+								151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "src/restaurants/templates/restaurants/restaurant_detail.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "src/restaurants/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "src/restaurants/validators.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								275,
+								275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "src/restaurants/templates/restaurants/restaurant_list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "src/muipicky/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2077,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1920,
+								1920
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "src/restaurants/templates/registration/password_reset_subject.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "src/restaurants/templates/registration/password_reset_email.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "src/restaurants/templates/registration/password_reset_done.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "src/restaurants/templates/registration/password_reset_confirm.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "src/restaurants/templates/registration/password_reset_complete.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "src/templates/snippets/nav.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "src/templates/snippets/css.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								490,
+								490
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "src/restaurants/registration/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								838,
+								838
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "src/restaurants/templates/registration/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "src/restaurants/templates/registration/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								901,
+								901
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/home/aakanksha/Dev/venv/src/restaurants/templates/registration",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "src/templates/Contact.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "src/templates/About.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 182.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/my_c++.sublime-build",
+	"project": "muipicky.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/code/snippet.sublime-snippet"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 237.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

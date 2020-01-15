@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class='row'>
+<div class="col-sm-6 text-center col-sm-offset-3">
+	<h1> User Following Feed </h1>
+{% for obj in object_list %}
+
+	<div class="thumbnail">
+		<h3><b><a href="{% url 'profiles:detail' username=obj.user.username %}">{{obj.user.username}}</a></b></h3>
+		<h4><b>{{obj.name}}</b></h4> 
+		<p> {{obj.restaurants.title}} | {{obj.restaurants.location}} | {{obj.restaurants.category}}</p>
+<p>
+<ul>
+	<b>Contains</b>
+	
+ 	{% for ing in obj.get_contents %}
+ 	<span style='padding: 5px;margin-right: 4px;background-color:#ccc'>{{ing}} </span>
+ 	{%endfor%}
+ </li>
+</ul>
+</p>
+
+</div>
+
+{% endfor %}
+</div>
+</div>
+{% endblock %}

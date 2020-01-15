@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{%block title %} Users |{{ block.super }}{%endblock%}
+
+{% block content %}
+<div class='row'>
+<div class="col-sm-6 text-center col-sm-offset-3">
+	<h1> Users </h1>
+
+{% for user in data %}
+<div class='thumbnails'>
+<li><a href="{% url 'profiles:detail' username=user.username %}">{{user.username}}<br/></a></li>
+</div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Welcome || {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>Welcome to Dainty Diet</h1>
+	<a href="{% url 'register'%}">New Here? Register</a><br/>
+	<a href="{% url 'login' %}">Already Registered? Login </a>
+		
+{% endblock content %}
