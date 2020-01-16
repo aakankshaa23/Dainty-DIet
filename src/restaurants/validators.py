@@ -5,4 +5,4 @@ CATEGORY=['Mexican','Gujrati','Punjabi','Italian','South','Family']
 def validate_category(value):
 	cat=value.capitalize()
 	if not value in CATEGORY and not cat in CATEGORY:
-		raise ValidationError(f"{value} not a valid category")
+		raise ValidationError(value+" not a valid category")
