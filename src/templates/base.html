@@ -1,7 +1,10 @@
+<!DOCTYPE html>
+{% load static %}
 <html>
 	<head>
 		<title>{% block title %}Dainty Diet.com{% endblock title %}</title>
 		{% include 'snippets/css.html' %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 	</head>
 	<style>
 div {
@@ -10,7 +13,24 @@ div {
 </style>
 	<body>
 		
-	{% include 'snippets/nav.html' %}
+		<nav class="navbar">
+			<ul>
+				<li><a href="{% url 'home' %}" class="custom-navbar">Dainty Diet</a></li>
+				<li><a href="{% url 'about' %}">About</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+				<li><a href="{% url 'profiles:users' %}">Users</a></li>
+			</ul>
+			<ul class="ml-auto">
+			{% if request.user.is_authenticated %}
+			<li><a href="{% url 'restaurants' %}">Restaurants</a></li>
+			<li><a href="{% url 'logout' %}">LogOut</a></li>
+			<li><a href="{% url 'menus:list' %}">Menu</a></li>
+			{% else %}
+			<li><a href="{% ulr 'login' %}">Login</a></li>
+			{% endif %}
+			</ul>
+		
+		</nav>
 	<div class="container">
 		{% block content %}
 		{% endblock content %}
